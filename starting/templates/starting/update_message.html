@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+    <h1>Update Message</h1>
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="text" name="updated_message" value={{mes.body}} />
+        <input type="submit" value="Update" />
+    </form>
+{% endblock %}
